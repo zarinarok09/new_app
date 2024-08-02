@@ -1,0 +1,5 @@
+FROM python:3.9
+WORKDIR /bot
+COPY ./main.py /bot
+RUN pip install --no-cache-dir aiogram aiohttp
+CMD ["python", "main.py"]
